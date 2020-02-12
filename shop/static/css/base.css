@@ -4,7 +4,7 @@ a{text-decoration:none;}
 
 #header{background:#444;color:#fff;height:60px;line-height:60px;margin-bottom:10px;}
 #header h1{font-size:48px;}
-#header a{text-decoration: none;font-size:48px;color:#fff;}
+#header .logo a{text-decoration: none;font-size:48px;color:#fff;}
 .container{width:100%;max-width:1300px;display:flex;justify-content:space-between;margin:0 auto;padding: 0;}
 .container .sidebar{flex-basis:20%;background:#d1d1d1;}
 .container .main{flex-basis:78%;}
@@ -18,6 +18,8 @@ a{text-decoration:none;}
 #footer{background:#444;color:#fff;margin-top:10px;}
 #footer p{margin:0 auto;line-height:40px;}
 #footer a{color:#999;}
+
+.cart a{font-size:16px;color:#e9e9e9;}
 
 table {
   border-collapse: collapse;
