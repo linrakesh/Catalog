@@ -1,0 +1,36 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>{% block title %} My Shop {% endblock %}</title>
+        <link rel="stylesheet" href="{% static 'css/base.css' %}">
+    </head>
+
+    <body>
+        <div id="header">
+            <div class="container">
+                <div class="logo">
+                    <a href="{% url 'shop:product_list' %}">My Shop</a>
+                </div>
+                <div class="cart">
+                    your cart is empty
+                </div>
+            </div>
+        </div>
+        <!--end of header id-->
+        <div id="content">
+            {% block content %}
+            {% endblock %}
+        </div>
+        <div id="footer">
+            <div class="container">
+                <p>All rights reserved to <a href="https://cbsetoday.com" target="_blank">cbsetoday.com</a></p>
+            </div>
+        </div>
+    </body>
+
+</html>
