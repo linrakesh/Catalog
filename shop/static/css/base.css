@@ -6,8 +6,8 @@ a{text-decoration:none;}
 #header h1{font-size:48px;}
 #header a{text-decoration: none;font-size:48px;color:#fff;}
 .container{width:100%;max-width:1300px;display:flex;justify-content:space-between;margin:0 auto;padding: 0;}
-.container .sidebar{flex-basis:30%;background:#d1d1d1;}
-.container .main{flex-basis:68%;}
+.container .sidebar{flex-basis:20%;background:#d1d1d1;}
+.container .main{flex-basis:78%;}
 .container .main .content{display:flex;justify-content:space-between ;flex-wrap:wrap;}
 .container .main .content .item{flex-basis:30%;}
 
@@ -18,3 +18,29 @@ a{text-decoration:none;}
 #footer{background:#444;color:#fff;margin-top:10px;}
 #footer p{margin:0 auto;line-height:40px;}
 #footer a{color:#999;}
+
+table {
+  border-collapse: collapse;
+  width:100%;
+}
+table, th, td {
+  border: 1px solid black;
+}
+th {
+  text-align: left;
+}
+td {
+    height: 50px;
+    width:80px;
+    vertical-align: middle;
+
+}
+th, td {
+  padding: 10px;
+  text-align: left;
+}
+tr:nth-child(even) {background-color: #f2f2f2;}
+
+.text-right{text-align: right;}
+.button{padding:10px 15px; background:red;color:#fff;margin:10px;}
+.small-button{padding: 5px 10px;background:#0fb44f;color:#fff;border-radius:5px;}
