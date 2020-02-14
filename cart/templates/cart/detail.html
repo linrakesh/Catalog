@@ -1,4 +1,8 @@
+<<<<<<< HEAD
 {% extends 'shop/base.html' %}
+=======
+'{% extends 'shop/base.html' %}
+>>>>>>> ee3785f9f9e58ecc4baab03d13ebb612837c5e1d
 {% load static %}
 {% block title %} Your Shopping Cart {% endblock title%}
 
@@ -24,7 +28,18 @@
                         src="{% if product.image %} {{product.image.url}}{% else %}{% static 'img/default.jpg' %}{% endif %}"></a>
             </td>
             <td>{{product.name}}</td>
+<<<<<<< HEAD
             <td>{{item.quantity}} </td>
+=======
+            <td><!-- {{item.quantity}} -->
+               <form action="{% url 'cart:cart_add' product.id %}" method="post">
+                   {% csrf_token %}
+                   {{item.update_quantity_form.quantity}}
+                   {{item.update_quantity_form.update}}
+                   <input type="submit" value="update">
+               </form> 
+            </td>
+>>>>>>> ee3785f9f9e58ecc4baab03d13ebb612837c5e1d
             <td class="num"> ${{item.price}} </td>
             <td class="num"> ${{item.total_price}} </td>
             <td><a class="small-button" href="{% url 'cart:cart_remove' product.id %}">Remove</a></td>
@@ -40,6 +55,10 @@
 </table>
 <p class="text-right">
     <a href="{% url 'shop:product_list' %}" class="button light">Continue shopping</a>
+<<<<<<< HEAD
     <a href="#" class="button">Checkout</a>
+=======
+    <a href="{% url 'orders:order_create' %}" class="button">Checkout</a>
+>>>>>>> ee3785f9f9e58ecc4baab03d13ebb612837c5e1d
 </p>
 {% endblock %}
